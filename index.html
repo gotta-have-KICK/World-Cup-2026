@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Cup 2026 Bracket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="name-bar">
+    <label for="bracketNameInput">Name your bracket:</label>
+    <input id="bracketNameInput" type="text" placeholder="Ex. Jeff's Bracket" maxlength="40" />
+    <button class="top-btn" id="shareBtn">Copy share link</button>
+  </div>
+
+  <div class="page">
+    <div id="stage">
+      <div class="title">
+        <div class="pill">WORLD CUP 2026</div>
+        <h1 id="bracketTitle">INTERACTIVE BRACKET</h1>
+        <div class="subtitle" id="bracketSubtitle">My Picks</div>
+      </div>
+
+      <svg class="lines" id="lines"></svg>
+      <div id="matches"></div>
+
+      <div class="champion">
+        <div class="label">CHAMPION</div>
+        <div class="name" id="championName"><span class="empty">Pick final</span></div>
+      </div>
+
+      <div class="controls">
+        <button class="btn" id="saveBtn">Save completed bracket as image</button>
+        <button class="btn secondary" id="resetBtn">Reset picks</button>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="confettiCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
